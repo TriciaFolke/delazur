@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+    grid-template-columns: repeat(16,1fr);
+    }
+
+
+h1{
+    color: #d679a6;
+    font-family: 'Damion', serif;
+    text-align: left;
+}
+
+#azur_mimosa { 
+    background-color: darkgoldenrod;
+    grid-column: 1 / span 6;
+    height: 500px;
+
+
+}
+@media screen and (min-width: 800px) {
+    #azur_mimosa {
+        grid-column: 2 / span 15;
+        height: 800px;
+    }
+
+
+[class^="index"] {
+grid-column: 1 / span 6;
+height: 600px;
+width: 600px;
+margin: 100px;
+position: absolute;
+}
+
+@media screen and (min-width: 800px) {
+    [class^="index"] {
+        grid-column: 2 / span 15;
+    }
+
+#div_cartes {
+    position: absolute;
+}
+
+.index_ph1 {
+    z-index: 10;
+    left: 0;
+}
+.index_ph2 {
+    z-index: 9;
+    left: 75px;
+    opacity: .9;
+}
+.index_ph3 {
+    z-index: 8;
+    left: 150px;
+    opacity: .8;
+}
+.index_ph4 {
+    z-index: 7;
+    left: 225px;
+    opacity: .7;
+}
+.index_ph5 {
+    z-index: 6;
+    left: 300px;
+    opacity: .6;
+}
+.index_ph6 {
+    z-index: 5;
+    left: 375px;
+    opacity: .5;
+}
+.index_ph7 {
+    z-index: 4;
+    left: 450px;
+    opacity: .4;
+}
+.index_ph8 {
+    z-index: 3;
+    left: 525px;
+    opacity: .3;
+}
+.index_ph9 {
+    z-index: 2;
+    left: 600px;
+    opacity: .2;
+}
+.index_ph10 {
+    z-index: 1;
+    left: 675px;
+    opacity: .1;
+}
+
+#div_musiciens {
+    display: flex;
+    grid-column: 1 / span 6;
+    height: 600px;
+}
+
+
+#publicite {
+    float: right;
+    height: 400px;
+    width: 800px;
+}
+
+@media screen and (min-width: 800px) {
+    #div_musiciens {
+        grid-column: 2 / span 15;
+    }
+
+
+[class^="musiciens"] {
+    grid-column: 1 / span 6;
+    height: 1000px;
+    
+}
+
+@media screen and (min-width: 800px) {
+.musiciens {
+    grid-column: 2 / span 15;
+}
+
+figcaption {
+    color: #f5c555;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
