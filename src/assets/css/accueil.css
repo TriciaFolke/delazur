@@ -1,44 +1,58 @@
 body {
-    margin: 0;
-}
-
-
-body {
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
+
 
 @media only screen and (min-width: 800px) {
     body {
     grid-template-columns: repeat(16,1fr);
     }
 
+    main {
+        min-height: 1000px;
+    }
+    
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
 
-h1{
+h2 {
     color: #d679a6;
     font-family: 'Damion', serif;
+    font-size: 6rem;
     text-align: left;
+}
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left; 
 }
 
 #azur_mimosa { 
     background-color: darkgoldenrod;
     grid-column: 1 / span 6;
-    height: 500px;
-
-
+    height: 300px;
 }
+
 @media screen and (min-width: 800px) {
     #azur_mimosa {
         grid-column: 2 / span 15;
-        height: 800px;
-    }
+        height: 500px;
+}
 
 
 [class^="index"] {
 grid-column: 1 / span 6;
-height: 600px;
-width: 600px;
-margin: 100px;
+height: 400px;
+width: 400px;
+margin: 50px;
 position: absolute;
 }
 
@@ -50,6 +64,7 @@ position: absolute;
 #div_cartes {
     position: absolute;
 }
+
 
 .index_ph1 {
     z-index: 10;
@@ -101,29 +116,41 @@ position: absolute;
     opacity: .1;
 }
 
-#div_musiciens {
-    display: flex;
-    grid-column: 1 / span 6;
-    height: 600px;
-}
-
-
 #publicite {
+    color: black;
     float: right;
-    height: 400px;
-    width: 800px;
+    height: 300px;
+    width: 600px;
+    margin: 80px 65px;
 }
+
+blockquote {
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+
+#div_musiciens {
+    grid-column: 1 / span 6;
+    height: 500px;
+}
+
+
 
 @media screen and (min-width: 800px) {
     #div_musiciens {
         grid-column: 2 / span 15;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
 
 [class^="musiciens"] {
     grid-column: 1 / span 6;
     height: 1000px;
-    
 }
 
 @media screen and (min-width: 800px) {
@@ -131,9 +158,14 @@ position: absolute;
     grid-column: 2 / span 15;
 }
 
+.img_musiciens {
+
+max-height: 500px;
+display: block;
+}
+
 figcaption {
     color: #f5c555;
     text-transform: uppercase;
-    font-size: 30px;
-
+    font-size: 20px;
 }
