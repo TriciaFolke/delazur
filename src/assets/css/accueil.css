@@ -1,176 +1,237 @@
-body {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+
+main {
+    min-height: 2000px;
 }
-
-
-@media only screen and (min-width: 800px) {
-    body {
-    grid-template-columns: repeat(16,1fr);
-    }
-}
-
-    main {
-        min-height: 1000px;
-    }
     
-h1 {
-    font-size: 5rem;
-    text-transform: uppercase;
-}
 
 h2 {
     color: #d679a6;
     font-family: 'Damion', serif;
-    font-size: 6rem;
+    font-size: 3.5rem;
+    padding-left: 35px;
     text-align: left;
+    margin-top: 100px;
 }
-h3 {
-    font-size: 3rem;
+
+h4 {
+    font-size: 2rem;
     font-weight: bold;
 }
 
+h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: left; 
 }
 
 #azur_mimosa { 
-    background-color: darkgoldenrod;
-    grid-column: 1 / span 6;
-    height: 300px;
+    background-color: #f5c555;
+    height: 400px;
 }
 
 @media screen and (min-width: 800px) {
     #azur_mimosa {
-        grid-column: 2 / span 15;
-        height: 500px;
+        height: 400px;
 }
 }
 
 
 [class^="index"] {
-grid-column: 1 / span 6;
-height: 400px;
-width: 400px;
+height: 300px;
+width: 300px;
 margin: 50px;
 position: absolute;
 }
 
-@media screen and (min-width: 800px) {
-    [class^="index"] {
-        grid-column: 2 / span 15;
-    }
-}
 
 #div_cartes {
     position: absolute;
 }
 
 
-.index_ph1 {
+.index_p1 {
     z-index: 10;
     left: 0;
+    padding-left: 80px;
 }
+
+@media screen and (min-width: 800px) {
+    .index_p1 {
+        padding-left: 0;
+        position: relative;
+}
+}
+
+
+[class^="index_ph"] {
+display: none;
+}
+
+@media screen and (min-width: 800px) {
+    [class^="index_ph"] {
+        display: block;
+        display: initial;
+}
+}
+
+
 .index_ph2 {
     z-index: 9;
-    left: 75px;
+    left: 50px;
     opacity: .9;
 }
 .index_ph3 {
     z-index: 8;
-    left: 150px;
+    left: 100px;
     opacity: .8;
 }
 .index_ph4 {
     z-index: 7;
-    left: 225px;
+    left: 150px;
     opacity: .7;
 }
 .index_ph5 {
     z-index: 6;
-    left: 300px;
+    left: 200px;
     opacity: .6;
 }
 .index_ph6 {
     z-index: 5;
-    left: 375px;
+    left: 250px;
     opacity: .5;
 }
 .index_ph7 {
     z-index: 4;
-    left: 450px;
+    left: 300px;
     opacity: .4;
 }
 .index_ph8 {
     z-index: 3;
-    left: 525px;
+    left: 350px;
     opacity: .3;
 }
 .index_ph9 {
     z-index: 2;
-    left: 600px;
+    left: 400px;
     opacity: .2;
 }
 .index_ph10 {
     z-index: 1;
-    left: 675px;
+    left: 450px;
     opacity: .1;
 }
 
 #publicite {
     color: black;
     float: right;
-    height: 300px;
-    width: 600px;
+    height: 200px;
+    width: 400px;
     margin: 80px 65px;
+    z-index:12;
+    position: relative;
 }
 
 blockquote {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: left;
+    margin-top: 50px;
 }
-
 
 
 #div_musiciens {
-    grid-column: 1 / span 6;
-    height: 500px;
+    grid-column: 1 / 6;
 }
-
-
 
 @media screen and (min-width: 800px) {
     #div_musiciens {
-        grid-column: 2 / span 15;
+        max-width:100%;
+        max-height: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+        background-color: black;
+        margin-top: 100px;
+}
 }
 
-
-[class^="musiciens"] {
-    grid-column: 1 / span 6;
-    height: 1000px;
-}
-
-@media screen and (min-width: 800px) {
-.musiciens {
-    grid-column: 2 / span 15;
-}
-}
 
 .img_musiciens {
-
-max-height: 500px;
-display: block;
+    filter: brightness(40%);
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
 }
+
+
+@media screen and (min-width: 800px) {
+    .img_musiciens {
+        max-width:100%;
+        max-height: 100%;
+        filter: brightness(100%);
+}
+}
+
+figure {
+    position: relative;
+  }
+
 
 figcaption {
     color: #f5c555;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2.2rem;
+    display: block;
+    float: left;
+    padding: 50px 65px;
+    position: absolute;
+    top: 0;
+}
+    
+@media screen and (min-width: 800px) {
+    figcaption {
+        margin: 10px 20px;
+}
+}
+
+table {
+    width: 270px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 800px) {
+    table {
+        display: none;
+}
+}
+
+th{
+    border-bottom:  1px solid white;
+    padding-bottom: 10px;
+}
+
+#titre_droit{
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+
+td {
+    border-bottom:  1px solid white;
+    padding: 10px 0;
+}
+
+
+td.tx_droit {
+    border-bottom:  1px solid white;
+    padding-left: 30px;
 }
