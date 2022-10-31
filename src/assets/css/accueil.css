@@ -1,237 +1,224 @@
-
 main {
-    min-height: 2000px;
+  min-height: 2000px;
 }
-    
 
 h2 {
-    color: #d679a6;
-    font-family: 'Damion', serif;
-    font-size: 3.5rem;
-    padding-left: 35px;
-    text-align: left;
-    margin-top: 100px;
+  color: #d679a6;
+  font-family: "Damion", serif;
+  font-size: 3.5rem;
+  padding-left: 35px;
+  text-align: left;
+  margin-top: 100px;
 }
 
 h4 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: left; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
 }
 
-#azur_mimosa { 
-    background-color: #f5c555;
-    height: 400px;
+#azur_mimosa {
+  background-color: #f5c555;
+  height: 400px;
 }
 
 @media screen and (min-width: 800px) {
-    #azur_mimosa {
-        height: 400px;
+  #azur_mimosa {
+    height: 400px;
+  }
 }
-}
-
 
 [class^="index"] {
-height: 300px;
-width: 300px;
-margin: 50px;
-position: absolute;
+  height: 300px;
+  width: 300px;
+  margin: 50px;
+  position: absolute;
 }
-
 
 #div_cartes {
-    position: absolute;
+  position: absolute;
 }
-
 
 .index_p1 {
-    z-index: 10;
-    left: 0;
-    padding-left: 80px;
+  z-index: 10;
+  left: 0;
+  padding-left: 80px;
 }
 
 @media screen and (min-width: 800px) {
-    .index_p1 {
-        padding-left: 0;
-        position: relative;
+  .index_p1 {
+    padding-left: 0;
+    position: relative;
+  }
 }
-}
-
 
 [class^="index_ph"] {
-display: none;
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
-    [class^="index_ph"] {
-        display: block;
-        display: initial;
+  [class^="index_ph"] {
+    display: block;
+    display: initial;
+  }
 }
-}
-
 
 .index_ph2 {
-    z-index: 9;
-    left: 50px;
-    opacity: .9;
+  z-index: 9;
+  left: 50px;
+  opacity: 0.9;
 }
 .index_ph3 {
-    z-index: 8;
-    left: 100px;
-    opacity: .8;
+  z-index: 8;
+  left: 100px;
+  opacity: 0.8;
 }
 .index_ph4 {
-    z-index: 7;
-    left: 150px;
-    opacity: .7;
+  z-index: 7;
+  left: 150px;
+  opacity: 0.7;
 }
 .index_ph5 {
-    z-index: 6;
-    left: 200px;
-    opacity: .6;
+  z-index: 6;
+  left: 200px;
+  opacity: 0.6;
 }
 .index_ph6 {
-    z-index: 5;
-    left: 250px;
-    opacity: .5;
+  z-index: 5;
+  left: 250px;
+  opacity: 0.5;
 }
 .index_ph7 {
-    z-index: 4;
-    left: 300px;
-    opacity: .4;
+  z-index: 4;
+  left: 300px;
+  opacity: 0.4;
 }
 .index_ph8 {
-    z-index: 3;
-    left: 350px;
-    opacity: .3;
+  z-index: 3;
+  left: 350px;
+  opacity: 0.3;
 }
 .index_ph9 {
-    z-index: 2;
-    left: 400px;
-    opacity: .2;
+  z-index: 2;
+  left: 400px;
+  opacity: 0.2;
 }
 .index_ph10 {
-    z-index: 1;
-    left: 450px;
-    opacity: .1;
+  z-index: 1;
+  left: 450px;
+  opacity: 0.1;
 }
 
 #publicite {
-    color: black;
-    float: right;
-    height: 200px;
-    width: 400px;
-    margin: 80px 65px;
-    z-index:12;
-    position: relative;
+  color: black;
+  float: right;
+  height: 200px;
+  width: 400px;
+  margin: 80px 65px;
+  z-index: 12;
+  position: relative;
 }
 
 blockquote {
-    font-size: 1.8rem;
-    text-align: left;
-    margin-top: 50px;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 50px;
 }
-
 
 #div_musiciens {
-    grid-column: 1 / 6;
+  grid-column: 1 / 6;
 }
 
 @media screen and (min-width: 800px) {
-    #div_musiciens {
-        max-width:100%;
-        max-height: 100%;
-        display: flex;
-        background-color: black;
-        margin-top: 100px;
+  #div_musiciens {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    background-color: black;
+    margin-top: 100px;
+  }
 }
-}
-
 
 .img_musiciens {
-    filter: brightness(40%);
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 40px;
-    position: relative;
+  filter: brightness(40%);
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
 }
-
 
 @media screen and (min-width: 800px) {
-    .img_musiciens {
-        max-width:100%;
-        max-height: 100%;
-        filter: brightness(100%);
-}
+  .img_musiciens {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(100%);
+  }
 }
 
 figure {
-    position: relative;
-  }
-
+  position: relative;
+}
 
 figcaption {
-    color: #f5c555;
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    display: block;
-    float: left;
-    padding: 50px 65px;
-    position: absolute;
-    top: 0;
+  color: #f5c555;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  display: block;
+  float: left;
+  padding: 50px 65px;
+  position: absolute;
+  top: 0;
 }
-    
+
 @media screen and (min-width: 800px) {
-    figcaption {
-        margin: 10px 20px;
-}
+  figcaption {
+    margin: 10px 20px;
+  }
 }
 
 table {
-    width: 270px;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
+  width: 270px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 800px) {
-    table {
-        display: none;
-}
-}
-
-th{
-    border-bottom:  1px solid white;
-    padding-bottom: 10px;
+  table {
+    display: none;
+  }
 }
 
-#titre_droit{
-    text-align: left;
-    padding-left: 30px;
-    padding-bottom: 10px;
+th {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
 }
 
+#titre_droit {
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
 
 td {
-    border-bottom:  1px solid white;
-    padding: 10px 0;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
 }
 
-
 td.tx_droit {
-    border-bottom:  1px solid white;
-    padding-left: 30px;
+  border-bottom: 1px solid white;
+  padding-left: 30px;
 }
