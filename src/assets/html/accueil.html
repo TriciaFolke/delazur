@@ -27,7 +27,7 @@
       </div>
       <nav>
         <ul>
-          <li><a class="serif" href="/src/index.html">Accueil</a></li>
+          <li><a class="serif active" href="/src/index.html">Accueil</a></li>
           <li><a class="serif" href="/src/spectacles.html">Spectacles</a></li>
           <li><a class="serif" href="/src/boutique.html">Boutique</a></li>
           <li><a class="serif" href="/src/contact.html">Contact</a></li>
@@ -39,9 +39,16 @@
       <div id="azur_mimosa">
         <div id="publicite">
           <!--Le h1 est déjà dans le header, dans le code fourni pour le travail, donc on mets un h2 pour le main-->
-          <h3>azur mimosa</h3>
-          <h4>Disponible sur Spotify</h4>
-          <p>Écouter le nouvel album sur Spotify</p>
+          <h2 id="h2_azur">azur mimosa</h2>
+          <div class="disp_spotity">
+            <h3 id="h3_spotify">Disponible sur Spotify</h3>
+            <p>Écouter le nouvel album sur Spotify</p>
+          </div>
+          <div class="symbole">
+          <img src="/src/assets/img/right-long-solid.svg" alt="Flèche" id="fleche">
+          <a href ="https://open.spotify.com/artist/1YG9iUkHCKcIEopGLn5QYb" aria-label="Spotify"
+          target="_blank"><i class="fab fa-spotify"></i></a>
+        </div>
         </div>
         <div id="div_cartes">
           <img
@@ -96,19 +103,20 @@
           />
         </div>
       </div>
-      <h2>Qui est Delazur?</h2>
-      <blockquote>
-        <cite>La seule chose qui règle tous les problèmes, c'est danser</cite> -
+      <div class="quiestdelazur">
+      <h4 id="h4_delazur">Qui est Delazur?</h4>
+      <p>
+        <q>La seule chose qui règle tous les problèmes, c'est danser</q>
         disait James Brown. Delazur en a fait sa mission. Issus de la
         florissante scène de Québec, les gars de Delazur offrent un savant
         mélange de funk rock, heavy disco, hard groove et plein d'autres genres
         inventés qui impliquent de la distorsion et une quantité non négligeable
         de mouvements de bassin. Riffs abondants, costumes colorés et plaisir
         garanti!
-      </blockquote>
-      <section>
-        <div id="div_musiciens">
-          <figure>
+      </p>
+    </div>
+    <section id="musiciens"> 
+      <figure id="alain">
             <img
               class="img_musiciens"
               src="/src/assets/img/fred.jpeg"
@@ -116,8 +124,11 @@
             />
             <table>
               <tr>
-                <th>Instrument</th>
-                <th id="titre_droit">Voix</th>
+                <td colspan="2" class="premcell"></td>
+              </tr>
+              <tr>
+                <td>Instrument</td>
+                <td class="tx_droit">Voix</td>
               </tr>
               <tr>
                 <td>Fruit totem</td>
@@ -143,7 +154,7 @@
 
             <figcaption>Alain Jasmine</figcaption>
           </figure>
-          <figure>
+          <figure id="jacques">
             <img
               class="img_musiciens"
               src="/src/assets/img/jee.jpeg"
@@ -151,8 +162,11 @@
             />
             <table>
               <tr>
-                <th>Instrument</th>
-                <th id="titre_droit">Guitare / Back Vocals</th>
+                <td colspan="2" class="premcell"></td>
+              </tr>
+              <tr>
+                <td>Instrument</td> <!-- td plutôt que th comme ce n'est pas un titre de tableau, mais que tout est au même niveau.-->
+                <td class="tx_droit">Guitare / Back Vocals</td>
               </tr>
               <tr>
                 <td>Fruit totem</td>
@@ -177,7 +191,7 @@
           </table>
             <figcaption>Jacques Danger</figcaption>
           </figure>
-          <figure>
+          <figure id="dove">
             <img
               class="img_musiciens"
               src="/src/assets/img/dove.jpeg"
@@ -185,8 +199,11 @@
             />
             <table>
               <tr>
-                <th>Instrument</th>
-                <th id="titre_droit">Batterie</th>
+                <td colspan="2" class="premcell"></td>
+              </tr>
+              <tr>
+                <td>Instrument</td>
+                <td class="tx_droit">Batterie</td>
               </tr>
               <tr>
                 <td>Fruit totem</td>
@@ -211,7 +228,7 @@
           </table>
             <figcaption>Dove</figcaption>
           </figure>
-          <figure>
+          <figure id="drhomme">
             <img
               class="img_musiciens"
               src="/src/assets/img/chelou.jpeg"
@@ -219,8 +236,11 @@
             />
             <table>
               <tr>
-                <th>Instrument</th>
-                <th id="titre_droit">Guitare basse</th>
+                <td colspan="2" class="premcell"></td>
+              </tr>
+              <tr>
+                <td>Instrument</td>
+                <td class="tx_droit">Guitare basse</td>
               </tr>
               <tr>
                 <td>Fruit totem</td>
@@ -245,7 +265,6 @@
           </table>
             <figcaption>Dr Homme</figcaption>
           </figure>
-        </div>
       </section>
     </main>
     <footer>
