@@ -7,247 +7,76 @@ fieldset {
   padding: 40px;
   border: none;
 }
-#g1 {
-  border: 2px solid #d679a6;
-}
-#g1 div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, min-content);
-  grid-template-areas:
-    "prenom prenom nom nom"
-    "traitpren traitpren traitnom traitnom"
-    "courriel courriel courriel courriel"
-    "traitcourriel traitcourriel traitcourriel traitcourriel"
-    "naissance naissance age age"
-    "traitnais traitnais traitage traitage"
-    "tel tel tel tel"
-    "traittel traittel traittel traittel";
-}
-#prenom-label {
-  grid-area: prenom;
-}
-#prenom {
-  grid-area: traitpren;
-  margin-right: 100px;
-}
-#nom-label {
-  grid-area: nom;
-}
-#nom {
-  grid-area: traitnom;
-}
-#courriel-label {
-  grid-area: courriel;
-}
-#courriel {
-  grid-area: traitcourriel;
-}
-#nais-label {
-  grid-area: naissance;
-}
-#naissance {
-  grid-area: traitnais;
-  margin-right: 100px;
-}
-#age-label {
-  grid-area: age;
-}
-#age {
-  grid-area: traitage;
-}
-#tel-label {
-  grid-area: tel;
-}
-#tel {
-  grid-area: traittel;
-}
-#g2 {
-  border: 2px solid #d679a6;
-  background-color: #d9967b;
-}
-#g2 input {
-  background-color: #d9967b;
-}
-#g2 div {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 2, 1fr;
-  grid-template-areas:
-    "civique rue province pays postal"
-    "traitcivique traitrue traitprovince traitpays traitpostal";
-}
-#civique-label {
-  grid-area: civique;
-}
-#civique {
-  grid-area: traitcivique;
-  margin-right: 20px;
-}
-#rue-label {
-  grid-area: rue;
-}
-#rue {
-  grid-area: traitrue;
-  margin-right: 20px;
-}
-#province-label {
-  grid-area: province;
-}
-#province {
-  grid-area: traitprovince;
-  margin-right: 20px;
-  border: 2px solid black;
-  height: 40px;
-  background-color: #d9967b;
-}
-#pays-label {
-  grid-area: pays;
-}
-#pays {
-  grid-area: traitpays;
-  margin-right: 20px;
-}
-#postal-label {
-  grid-area: postal;
-}
-#postal {
-  grid-area: traitpostal;
-}
-#g3 > div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas:
-    "couleur images mois semaine"
-    "traitcouleur traitimages traitmois traitsemaine"
-    "siteweb siteweb note note"
-    "traitsiteweb traitsiteweb traitnote traitnote"
-    "dateheure dateheure choix choix"
-    "traitdateheure traitdateheure traitchoix traitchoix";
-}
-#couleur-label {
-  grid-area: couleur;
-}
-#couleur {
-  grid-area: traitcouleur;
-  margin-right: 50px;
-}
-#images-label {
-  grid-area: images;
-}
-#images {
-  grid-area: traitimages;
-  margin-right: 50px;
-}
-#mois-label {
-  grid-area: mois;
-}
-#mois {
-  grid-area: traitmois;
-  margin-right: 50px;
-}
-#semaine-label {
-  grid-area: semaine;
-}
-#semaine {
-  grid-area: traitsemaine;
-}
-#web-label {
-  grid-area: siteweb;
-}
-#siteweb {
-  grid-area: traitsiteweb;
-  margin-right: 100px;
-}
-#note-label {
-  grid-area: note;
-}
-#note {
-  grid-area: traitnote;
-}
-#dateheure-label {
-  grid-area: dateheure;
-}
-#dateheure {
-  grid-area: traitdateheure;
-  margin-right: 100px;
-}
-#choix-label {
-  grid-area: choix;
-}
-#check {
-  grid-area: traitchoix;
-}
-#check > label{
-  font-size: 12px;
-}
-#check > input {
-  margin-right: 100px;
-}
-#g4 {
-  border: 2px solid #d679a6;
-}
-#flex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "choix1 choix2 choix3 choix4"
-}
-#choix-alain {
-  grid-area: choix1;
-}
-#choix-jacques {
-  grid-area: choix2;
-}
-#choix-dove {
-  grid-area: choix3;
-}
-#choix-drhomme {
-  grid-area: choix4;
-}
-#g5 div{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:
-    "label-mot"
-    "input-mot"
-}
-#mot-label {
-  grid-area: label-mot;
-}
-#motpasse {
-  grid-area: input-mot;
-  margin-right: 250px;
-}
-legend {
+form legend {
   text-align: center;
 }
-label {
+form label {
   color: white;
 }
-input {
+form input {
   background-color: #f5c555;
   border-style: none;
   border-bottom: 1px solid black;
   padding: 20px 0px 10px 0px;
   margin-bottom: 40px;
 }
-#couleur {
-  height: 70px;
-  width: 40px;
-  border: none;
+
+/* Informations générales */
+#g1 > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+  margin-right: 25px;
 }
-/*code pour le Range, à ne pas modifier*/
+#g1 {
+  border: 2px solid #d679a6;
+}
+#tel {
+  margin-bottom: -30px;
+}
+/* Adresse */
+#g2 {
+  border: 2px solid #d679a6;
+  background-color: #d9967b;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+#g2 input {
+  background-color: #d9967b;
+}
+#g2 > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+#province {
+  border: 1px solid black;
+  height: 40px;
+  background-color: #d9967b;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  width: 250px;
+}
+/* Préférences */
+#g3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#g3 > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+#check > label{
+  font-size: 12px;
+}
+/* Range */
 #note {
   height: 20px;
   -webkit-appearance: none;
-  margin: 12px 0px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 80%;
+  width: 105%;
 }
 #note::-webkit-slider-runnable-track {
   width: 100%;
@@ -266,49 +95,283 @@ input {
   -webkit-appearance: none;
   margin-top: -12px;
 }
-/*code pour le Range, à ne pas pas modifier*/
-
-#check {
+/* Range fin */
+#check input {
+  margin-bottom: 0;
+}
+#check-first {
   margin-top: 30px;
+}
+#check div {
+  margin-bottom: 15px;
+}
+/* Membre préféré */
+#g4 {
+  border: 2px solid #d679a6;
+  padding: 10px 40px;
+}
+#g4 input {
+  margin-bottom: -40px;
+}
+/* Mot de passe */
+#g5 {
+  padding: 10px 50px 10px 20px;
+  margin-top: 60px;
+}
+#g5 input {
+  width: 100%;
+}
+#couleur {
+  height: 70px;
+  width: 40px;
+  border: none;
+}
+/* Boutons */
+#btn-contact {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 #reset,
 #submit-form {
   background-color: #f5c555;
   border: 1px solid black;
-  padding: 10px 20px;
-}
-#reset{
-  margin-left: 40%;
+  padding: 15px 25px;
+  width: 120px;
 }
 #submit-form {
   margin-left: 50px;
 }
 
-@media screen and (max-width: 1200px) {  
-  #g1 > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#reset:focus, #submit-form:focus {
+  background-color: #d679a6;
+}
+
+#reset:hover, #submit-form:hover {
+  background-color: #d679a6;
+}
+
+/* Breakpoint */
+@media screen and (min-width: 1200px) {
+  /* Informations générales */
+  #g1 {
+    padding-top: 80px;
   }
-  #g2 > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #g1 div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, min-content);
+    grid-template-areas:
+      "prenom prenom nom nom"
+      "traitpren traitpren traitnom traitnom"
+      "courriel courriel courriel courriel"
+      "traitcourriel traitcourriel traitcourriel traitcourriel"
+      "naissance naissance age age"
+      "traitnais traitnais traitage traitage"
+      "tel tel tel tel"
+      "traittel traittel traittel traittel";
+    margin-left: 0;
   }
+  #prenom-label {
+    grid-area: prenom;
+  }
+  #prenom {
+    grid-area: traitpren;
+    margin-right: 150px;
+  }
+  #nom-label {
+    grid-area: nom;
+  }
+  #nom {
+    grid-area: traitnom;
+    margin-right: 50px;
+  }
+  #courriel-label {
+    grid-area: courriel;
+  }
+  #courriel {
+    grid-area: traitcourriel;
+    margin-right: 100px;
+  }
+  #nais-label {
+    grid-area: naissance;
+  }
+  #naissance {
+    grid-area: traitnais;
+    margin-right: 150px;
+  }
+  #age-label {
+    grid-area: age;
+  }
+  #age {
+    grid-area: traitage;
+    margin-right: 50px;
+  }
+  #tel-label {
+    grid-area: tel;
+  }
+  #tel {
+    grid-area: traittel;
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+  /* Adresse */
+  #g2 div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2, 1fr;
+    grid-template-areas:
+      "civique rue province pays postal"
+      "traitcivique traitrue traitprovince traitpays traitpostal";
+  }
+  #civique-label {
+    grid-area: civique;
+  }
+  #civique {
+    grid-area: traitcivique;
+    margin-right: 40px;
+  }
+  #rue-label {
+    grid-area: rue;
+  }
+  #rue {
+    grid-area: traitrue;
+    margin-right: 40px;
+  }
+  #province-label {
+    grid-area: province;
+  }
+  #province {
+    grid-area: traitprovince;
+    margin-right: 40px;
+  }
+  #pays-label {
+    grid-area: pays;
+  }
+  #pays {
+    grid-area: traitpays;
+    margin-right: 40px;
+  }
+  #postal-label {
+    grid-area: postal;
+  }
+  #postal {
+    grid-area: traitpostal;
+  }
+  /* Préférences */
   #g3 > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "couleur images mois semaine"
+      "traitcouleur traitimages traitmois traitsemaine"
+      "siteweb siteweb note note"
+      "traitsiteweb traitsiteweb traitnote traitnote"
+      "dateheure dateheure choix choix"
+      "traitdateheure traitdateheure traitchoix traitchoix";
   }
-  #g4 > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #couleur-label {
+    grid-area: couleur;
   }
-  #g5 > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #couleur {
+    grid-area: traitcouleur;
+    margin-top: -20px;
+  }
+  #images-label {
+    grid-area: images;
+  }
+  #images {
+    grid-area: traitimages;
+    margin-right: 150px;
+  }
+  #mois-label {
+    grid-area: mois;
+    margin-right: 150px;
+  }
+  #mois {
+    grid-area: traitmois;
+    margin-right: 150px;
+  }
+  #semaine-label {
+    grid-area: semaine;
+    margin-right: 150px;
+  }
+  #semaine {
+    grid-area: traitsemaine;
+    margin-right: 150px;
+  }
+  #web-label {
+    grid-area: siteweb;
+  }
+  #siteweb {
+    grid-area: traitsiteweb;
+    margin-right: 200px;
+  }
+  #note-label {
+    grid-area: note;
+  }
+  #note {
+    grid-area: traitnote;
+    width: 70%;
+  }
+  #dateheure-label {
+    grid-area: dateheure;
+  }
+  #dateheure {
+    grid-area: traitdateheure;
+    margin-right: 400px;
+  }
+  #choix-label {
+    grid-area: choix;
+  }
+  #check {
+    grid-area: traitchoix;
+    padding-top: 35px;
+  }
+  #check div {
+    display: inline;
+    margin-right: 60px;
+  }
+  /* Membre du groupe */
+  #flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "choix1 choix2 choix3 choix4";
+    padding: 20px 0;
+  }
+  #choix-alain {
+    grid-area: choix1;
+  }
+  #choix-jacques {
+    grid-area: choix2;
+  }
+  #choix-dove {
+    grid-area: choix3;
+  }
+  #choix-drhomme {
+    grid-area: choix4;
+  }
+  /* Mot de passe */
+  #g5 {
+    padding: 0 250px 0 80px;
+  }
+  #g5 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "label-mot"
+      "input-mot"
+  }
+  #mot-label {
+    grid-area: label-mot;
+  }
+  #motpasse {
+    grid-area: input-mot;
+    margin-right: 250px;
   }
 }
 

@@ -103,7 +103,7 @@
                 <label for="images" id="images-label">Vos images préférées?</label>
                 <input type="file" id="images" name="images" multiple />
 
-                <label for="mois" id="mois-label">Votre mois préféré? De <br> quelle année?</label>
+                <label for="mois" id="mois-label">Votre mois préféré? De quelle année?</label>
                 <input type="month" id="mois" name="mois" />
 
                 <label for="semaine" id="semaine-label">Votre semaine préférée de tous les temps?</label>
@@ -120,12 +120,18 @@
 
                 <label for="choix" id="choix-label">Durant ce show, tu veux...</label>
                 <div id="check">
+                  <div id="check-first">
                     <label for="danser" id="danser-label">Danser</label>
                     <input type="checkbox" id="danser" name="danser" />
+                  </div>
+                  <div>
                     <label for="groover" id="groover-label">Groover</label>
                     <input type="checkbox" id="groover" name="groover"/>
+                  </div>
+                  <div id="check-last">
                     <label for="couchertard" id="couchertard-label">Me coucher tard</label>
                     <input type="checkbox" id="couchertard" name="couchertard" />
+                  </div>
                 </div>
             </div>
         </fieldset>
@@ -134,19 +140,19 @@
             <legend>Votre membre du groupe préféré?</legend>
             <div id="flex">
                 <div id="choix-alain">
-                    <input type="radio" id="alain" name="alain" />
+                    <input type="radio" id="alain" name="membre" />
                     <label for="alain">Alain Jasmine</label>
                 </div>
                 <div id="choix-jacques">
-                    <input type="radio" id="jacques" name="jacques" />
+                    <input type="radio" id="jacques" name="membre" />
                     <label for="jacques">Jacques Danger</label>
                 </div>
                 <div id="choix-dove">
-                    <input type="radio" id="dove" name="dove" />
+                    <input type="radio" id="dove" name="membre" />
                     <label for="dove">Dove</label>
                 </div>
                 <div id="choix-drhomme">
-                    <input type="radio" id="drhomme" name="drhomme" />
+                    <input type="radio" id="drhomme" name="membre" />
                     <label for="drhomme">Dr Homme</label>
                 </div>
             </div>
@@ -161,8 +167,10 @@
         <!-- nous devons mettre des balises input au lieu de button car le lien app.css appelle le style 
         déjà fait pour les boutons de la page spectacles et il est impossible de faire le style pour
         la présente page -->
-        <input type="reset" id="reset" name="reset"></input>
-        <input type="submit" id="submit-form" name="submit-form"></input>
+        <div id="btn-contact">
+          <input type="reset" id="reset" name="reset" value="Réinitialiser"></input>
+          <input type="submit" id="submit-form" name="submit-form" value="Soumettre"></input>
+        </div>
         
       </form>
 
