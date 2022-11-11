@@ -1,11 +1,13 @@
 #h2_azur {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: -10px;
 }
 
 #h3_spotify {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   padding-top: 30px;
 }
@@ -18,8 +20,8 @@
   text-align: left;
 }
 
-p {
-  font-size: 1.2rem;
+#infodel {
+  font-size: 1.8rem;
   text-align: left; 
 }
 
@@ -39,7 +41,7 @@ p {
 }
 
 .disp_spotity p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: left; 
 }
 
@@ -59,7 +61,7 @@ width: 50px;
   margin-right: 30px;
 }
 
-.fa-spotify {
+.spotyhaut {
   color: black;
   font-size: 30px;
 }
@@ -146,11 +148,11 @@ position: absolute;
 
 .img_musiciens {
   display: block;
-  filter: brightness(40%);
   margin: 0 auto;
   width: 300px;
   padding-top: 40px;
   position: relative;
+  filter: brightness(30%);
 }
 
 figure {
@@ -195,6 +197,16 @@ td {
 } 
 
 @media screen and (min-width: 800px) {
+  #h2_azur {
+    font-size: 4.5rem;
+  }
+  
+  #h3_spotify {
+    font-size: 1.3rem;
+  }
+  .disp_spotity p {
+    font-size: 1.2rem;
+  }
 .index_p1 {
   padding-left: 0;
   position: relative;
@@ -202,12 +214,16 @@ td {
 #azur_mimosa {
   height: 400px;
 }
+#infodel {
+  font-size: 1.5rem;
+}
 [class^="index_ph"] {
   display: initial;
 }
 .img_musiciens {
   width: 100%;
   padding: 0;
+  filter: brightness(100%);
 }
 figcaption {
   font-size: 2rem;
@@ -217,7 +233,7 @@ figcaption {
   padding-left: 20px;
 }
 td {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 table:hover{
   background-color: rgba(0, 0, 0, 0.8);
@@ -229,9 +245,6 @@ table {
   width: 100%;
   height: 100%;
   padding: 20px;
-}
-td {
-  font-size: 0.4em;
 }
 .img_musiciens:hover {
   filter: brightness(30%);
