@@ -1,4 +1,4 @@
-h2{
+#h2spec {
     color: #d679a6;
     text-align: center;
     padding-bottom: 50px;
@@ -17,28 +17,29 @@ h2{
     justify-content: center;
     margin-bottom: 30px;
 }    
-button{
+.btn-spec {
     background-color: #d679a6;
     border: 1px solid #f5c555;
     float: right;
     width: 120px;
     height: 50px;
     margin-right: 25px;
-    margin-top: 30px;
+    margin-top: 18px;
 }
-button:focus{
+.btn-spec:focus{
     background: white;
 }
-button:hover{
+.btn-spec:hover{
     background: white;
 }
-button a{
+.btn-spec a{
     text-decoration: none;
     color: black;
 }
-h3{
+.nomsalle {
     padding: 5px 0 0 20px;
     margin-bottom: 0;
+    font-size: 1.5em;
 }
 .date{
     font-weight: bold;
@@ -46,7 +47,7 @@ h3{
     margin-top: 0%;
 }
 .ville{
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0 0 5px 20px;
 }
 
@@ -98,9 +99,13 @@ h3{
     font-size: 1.4rem;
 }
 
-h4 {
+.titremodale {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8em;
+}
+
+.textemodale {
+    font-size: 1.3em;
 }
 
 /*Input du courriel*/
@@ -205,6 +210,11 @@ h4 {
     #salle-12 { 
         grid-area: 11 / 5 / 12 / 9;
     }  
+
+    .btn-spec {
+        margin-right: 25px;
+        margin-top: 30px;
+    }
 
     #btn-abon{
         grid-column: 2 / 12;
